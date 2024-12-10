@@ -1,0 +1,59 @@
+/* Basic stuff */
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+a {
+  color: darkcyan;
+}
+p {
+  font-family: "Garamond","serif";
+}
+input {
+    font-family: "Times New Roman", "serif";
+    background-color: skyblue;
+}
+input:hover {
+  background-color: blue;
+}
+
+/* Style the tab */
+.tab {
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: skyblue;
+  float: left;
+  border: none;
+  outline: thick;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: blue;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: darkblue;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

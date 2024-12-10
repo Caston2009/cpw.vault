@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Favorites')">Favorites</button>
+  <button class="tablinks" onclick="openCity(event, 'Least Favorites')">Least Favorites</button>
+  <button class="tablinks" onclick="openCity(event, 'Made for school')">Made for school</button>
+  <button class="tablinks" onclick="openCity(event, 'All of my writing')">All of my writing</button>
+</div>
+
+<!-- Tab content -->
+<div id="Favorites" class="tabcontent">
+  <h4>Favorites</h3>
+    <form action="./writing/Page_Two.html">
+		<input type="submit" value="Go to Another Page">
+	</form>
+</div>
+
+<div id="Least Favorites" class="tabcontent">
+  <h4>Least Favorites</h3>
+    <form action="./writing/Page_Two.html">
+		<input type="submit" value="Go to Another Page">
+	</form></div>
+
+<div id="Made for school" class="tabcontent">
+  <h4>Made for school</h3>
+    <form action="./writing/Page_Two.html">
+		<input type="submit" value="Go to Another Page">
+	</form></div>
+
+<div id="All of my writing" class="tabcontent">
+  <h4>All of my writing</h3>
+    <form action="./writing/Page_Two.html">
+		<input type="submit" value="Go to Another Page">
+	</form></div>
+
+
+<script>
+	function openCity(evt, cityName) {
+	  // Declare all variables
+	  var i, tabcontent, tablinks;
+
+	  // Get all elements with class="tabcontent" and hide them
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+
+	  // Get all elements with class="tablinks" and remove the class "active"
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+
+	  // Show the current tab, and add an "active" class to the button that opened the tab
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	</script>
+</body>
+</html>
